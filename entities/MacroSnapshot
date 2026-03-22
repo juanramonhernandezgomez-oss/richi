@@ -1,0 +1,76 @@
+{
+  "name": "MacroSnapshot",
+  "type": "object",
+  "properties": {
+    "dxy": {
+      "type": "number",
+      "description": "US Dollar Index"
+    },
+    "vix": {
+      "type": "number",
+      "description": "Volatility Index"
+    },
+    "oil_wti": {
+      "type": "number",
+      "description": "WTI Crude Oil price"
+    },
+    "bond_10y": {
+      "type": "number",
+      "description": "US 10Y Treasury Yield"
+    },
+    "tga_balance": {
+      "type": "number",
+      "description": "Treasury General Account balance in billions"
+    },
+    "rrp_balance": {
+      "type": "number",
+      "description": "Reverse Repo balance in billions"
+    },
+    "sofr_rate": {
+      "type": "number",
+      "description": "SOFR overnight rate"
+    },
+    "credit_spread": {
+      "type": "number",
+      "description": "Credit spread (HY OAS)"
+    },
+    "mmf_total": {
+      "type": "number",
+      "description": "Money Market Fund total in trillions"
+    },
+    "btc_price": {
+      "type": "number",
+      "description": "Bitcoin price"
+    },
+    "sp500": {
+      "type": "number",
+      "description": "S&P 500 index level"
+    },
+    "phase_detected": {
+      "type": "string",
+      "enum": [
+        "phase_1_risk_off",
+        "phase_2_risk_on",
+        "lateral",
+        "unknown"
+      ],
+      "description": "Detected market phase"
+    },
+    "phase_score": {
+      "type": "number",
+      "description": "Phase score from -100 (risk off) to +100 (risk on)"
+    },
+    "ai_analysis": {
+      "type": "string",
+      "description": "AI-generated market analysis"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Manual notes"
+    }
+  },
+  "required": [
+    "dxy",
+    "vix"
+  ]
+}
